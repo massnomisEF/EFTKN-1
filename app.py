@@ -51,3 +51,5 @@ LeaderBoard = px.bar(
 )
 st.plotly_chart(LeaderBoard)
 
+df['rank'] = df['points'].rank(ascending = False)
+st.write(df)

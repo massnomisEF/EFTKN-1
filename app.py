@@ -1,10 +1,7 @@
 import pandas as pd
 import streamlit as st
 import requests
-import plotly
 import plotly.express as px
-import json
-import time
 
 data = {
     'Name':
@@ -22,7 +19,6 @@ for address in df['address']:
     list.append(points, bal)
 
 df['points'] = points
-# print(df)
 
 df = df.sort_values(by=['points'], ascending=False)
 
@@ -36,8 +32,3 @@ LeaderBoard = px.bar(
     height = 600
 )
 st.plotly_chart(LeaderBoard)
-
-
-# df2 = df.sort_values(by=['Points'], ascending=False)
-#
-# print(df2)

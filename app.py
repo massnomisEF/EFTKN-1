@@ -34,6 +34,7 @@ for address in df['address']:
         f"https://api.polygonscan.com/api?module=account&action=tokenbalance&contractaddress=0x23a32ba2b63051950e8421c18fb300870993d9a9&address={address}&tag=latest&apikey=FSQ6MKYTF5335UAIX3IQZP8XYUX394AU8Q").json()
     bal = float(bal_custom['result']) / 10 ** 18
     list.append(points, bal)
+    time.sleep(5)
 
 df['points'] = points
 # print(df)

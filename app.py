@@ -6,18 +6,12 @@ import plotly.express as px
 import json
 import time
 
-
-
-
-
-
-
 data = {
     'Name':
         [
          'Yaniv',
-         'Avishay',
          'Yasha',
+         'Avishay',
          'Sam',
          'Tim',
          'Asif'
@@ -33,14 +27,14 @@ data = {
          ]
 }
 df = pd.DataFrame(data)
-st.title("The EF LinkedIn Points Party")
+st.title("The EF LinkedIn Token Party")
 points = []
 for address in df['address']:
     bal_custom = requests.get(
         f"https://api.polygonscan.com/api?module=account&action=tokenbalance&contractaddress=0x23a32ba2b63051950e8421c18fb300870993d9a9&address={address}&tag=latest&apikey=FSQ6MKYTF5335UAIX3IQZP8XYUX394AU8Q").json()
     bal = float(bal_custom['result']) / 10 ** 18
     list.append(points, bal)
-    time.sleep(5)
+    time.sleep(1)
 
 df['points'] = points
 # print(df)

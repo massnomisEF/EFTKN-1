@@ -15,7 +15,8 @@ data = {
          'Sam',
          'Tim',
          'Asif',
-         'Ylann'
+         'Ylann',
+         'Roman'
          ],
     'address':
         [
@@ -25,7 +26,8 @@ data = {
          "0xba2ef5189B762bd4C9E7f0b50fBBaB65193935e8",
          "0x48E92AaDd3b92Aa875fe08BF27fe44080eEC749a",
          "0x6bA98440b46d12b46d3393b21319c38AaC12249a",
-         "0xc562e686cfdc46a4cc7294447611ee8a952e4a03"   
+         "0xc562e686cfdc46a4cc7294447611ee8a952e4a03",
+         "0x23a32ba2b63051950e8421c18fb300870993d9a9"   
          ]
 }
 df = pd.DataFrame(data)

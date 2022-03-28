@@ -17,7 +17,7 @@ data = {
          'Asif',
          'Ylann',
          'Roman',
-         'placeholder',
+         'Marine',
          'Raz'   
          ],
     'address':

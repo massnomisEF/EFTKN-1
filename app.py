@@ -5,6 +5,7 @@ import plotly
 import plotly.express as px
 import json
 import time
+st.set_page_config(page_title='EF Token', page_icon=':smiley')
 
 data = {
     'Name':
@@ -18,7 +19,7 @@ data = {
          'Ylann',
          'Roman',
          'Marine',
-         'Raz'   
+         'Raz'
          ],
     'address':
         [
@@ -31,7 +32,7 @@ data = {
          "0xc562e686cfdc46a4cc7294447611ee8a952e4a03",
          "0xce04b56115e76918a998e1bdf989d56ff329b252",
          "0xb9d88621e03c4aceaf6572f0aef720a8fe37f03b",
-         "0xa68166badfc75a15ee2f8a30a8230f8e1b8b4f82"   
+         "0xa68166badfc75a15ee2f8a30a8230f8e1b8b4f82"
          ]
 }
 df = pd.DataFrame(data)
